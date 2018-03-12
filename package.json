@@ -1,0 +1,28 @@
+{
+  "name": "salonangel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wearelegion8607/salonangel.git"
+  },
+  "author": "Rudikoff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wearelegion8607/salonangel/issues"
+  },
+  "homepage": "https://github.com/wearelegion8607/salonangel#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^5.0.0"
+  },
+  "dependencies": {
+    "bower": "^1.8.2",
+    "browser-sync": "^2.23.6"
+  }
+}
