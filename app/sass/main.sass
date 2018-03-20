@@ -41,7 +41,8 @@ table
   border-collapse: collapse
   border-spacing: 0
 
-///////////////
+
+/* header */
 .top-title
   background: #72448d
   padding-top: 10px
@@ -57,18 +58,20 @@ table
   border-radius: 50%
   margin-right: 5px
 .contacts
-  margin-top: 32px
-  margin-left: 172px
+  margin-top: 25px
+  margin-left: 49%
+  margin-bottom: 20px
   a
     color: white
     font-family: Lato, sans-serif
-    font-size: 16px
+    font-size: 17px
     line-height: 15px
     font-weight: 400
     text-decoration: none
-  a:hover
+    &:hover
       color: white
       text-decoration: none
+
   i
     margin-right: 5px
 
@@ -82,13 +85,406 @@ table
       text-decoration: none
 
 .list-style
+  margin-left: 20%
   li
     list-style: none
     display: inline
+  i
+    margin-right: 5px
+.list-style-item
+  li
+    display: inline-block
+
+  a
+    border-left: 1px solid #fff
+    display: inline-block
+    line-height: 15px
+    margin: 0 0 0 8px
+    padding: 0 0 0 10px
+    &:hover
+      color: white
+.top-menu-item__active
+  border-color: white!important
+
+
 .price-top
   @extend.mail
+.menu-wrapper
+  background-color: #3f244a
+
+.top-menu-item
+  li
+    display: inline-block
+    a
+      text-transform: uppercase
+      text-decoration: none
+      color: white
+      font-size: 14px
+      font-weight: 400
+      border: 2px solid rgba(255, 255, 255, 0)
+      padding: 10px 22px 8px
+      border-radius: 24px
+      line-height: 100px
+      transition: all 300ms linear
+      &:hover
+        border-color: white
+        box-sizing: border-box
+        background: rgba(157, 172, 255, 0.17)
+.gradient-bg
+  background-image: url(../img/footer_strip_bg.png)
+.list-style-item
+
+  a
+    color: white
 
 
+  i
+    color: white
+    font-size: 20px
 
+/*---------------- and header----------------*/
+
+/*----------------- welcome--------- */
+.welcome
+  display: block
+.welcome-title
+  text-align: center
+  color: #212529
+  font-family: 'Lato', sans-serif
+  font-weight: 300
+  font-size: 30px
+  margin-top: 36px
+.angel
+  font-family: 'Tangerine', cursive
+  font-weight: 700
+  font-size: 42px
+
+.bg-icon
+  background-image: url(../img/ico-flower.png)
+  background-position: left top
+  background-repeat: no-repeat
+  content: ""
+  display: block
+  height: 20px
+  margin: 0 auto
+  position: relative
+  width: 20px
+  &:after
+    content: ""
+    background: #181818
+    display: inline-block
+    height: 4px
+    position: absolute
+    top: 8px
+    width: 42px
+    left: 28px
+  &:before
+    content: ""
+    background: #181818
+    display: inline-block
+    height: 4px
+    position: absolute
+    top: 8px
+    width: 42px
+    right: 28px
+.art-wrap
+  margin-top: 12px
+.block-img
+  width: 95px
+  height: 95px
+  overflow: hidden
+  border-radius: 50%
+  margin: 0 auto
+.block-img-title
+  font-family: 'Lato', sans-serif
+  font-weight: 300
+  font-size: 24px
+  text-align: center
+  margin-top: 20px
+  a
+    color: #212529
+    &:hover
+      color: #212529
+.service
+  margin-top: 50px
+  padding-bottom: 70px
+
+
+/*------------------ and welcome---------*/
+.spec-block
+  margin-top: 50px
+.spec-block-img
+  margin-bottom: 50px
+  overflow: hidden
+.wrap-spec
+  background: rgba(243, 243, 243, 1)
+  padding-top: 25px
+  padding-bottom: 60px
+.spec
+  font-family: 'Pattaya', sans-serif
+  font-weight: 400
+  font-size: 26px
+  color: #787878
+  text-align: center
+  margin-top: 18px
+.title-spec
+  text-align: center
+.lab-img
+  margin-left: 50px
+  font-size: 18px
+  display: inline-block
+  border-bottom-color:
+  border-bottom: solid 1.5px #72448d!important
+  line-height: 39px
+  &:before
+    background-image: url(../img/floral-head-bg.png)
+    content: ""
+    background-position: left center
+    background-repeat: no-repeat
+    height: 51px
+    position: absolute
+    bottom: -17px
+    left: -15px
+    width: 74px
+.lab-text
+  text-align: right
+  margin-top: 40px
+.lab-wrap
+  position: relative
+.spec-block-list
+  text-align: left
+  li
+    margin-bottom: 10px
+  i
+    color: #72448d
+    margin-right: 10px
+
+.button-spec
+  display: inline-block
+  position: relative
+  font-size: 15px
+  padding: 11px 35px
+  margin-top: 40px
+  clear: both
+  box-sizing: border-box
+  text-decoration: none
+  color: white
+  background-color: #5c3474
+  border-radius: 5px
+  &:before
+    content: ''
+    height: 0
+    left: 0
+    position: absolute
+
+    top: 0
+    width: 100%
+    z-index: -1
+    border-radius: 3px
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    -ms-border-radius: 3px
+    -o-border-radius: 3px
+    transition: all 0.3s
+    -webkit-transition: all 0.3s
+  &:hover
+    color: white
+
+    &:before
+      tab-index: 1
+      height: 100%
+      background-color: rgba(146, 64, 171, 0.71)
+      z-index: 1
+.info-block
+  background: rgba(114, 68, 141, 0.9)
+  padding: 80px 0 80px
+.info-block-item
+  background: #8c67a3
+  padding: 20px 60px 20px
+  text-align: center
+  color: white
+  margin-bottom: 15px
+  h5
+    position: relative
+    span
+      height: 2px
+      left: 0
+      margin: auto
+      position: absolute
+      right: 0
+      top: -14px
+      width: 130px
+      background-color: #72448d
+.counter
+  color: white
+  font-size: 60px
+.counter-number
+  margin-bottom: 20px
+  font-weight: 700
+.leaflet
+  &:before
+    content: ""
+    background-image: url(../img/floral-head-bg.png)
+    left: -50px
+    top: -30px
+    height: 51px
+    margin: auto
+    position: absolute
+    width: 74px
+  &:after
+    content: ""
+    background-image: url(../img/floral-head-bg.png)
+    margin: auto
+    position: absolute
+    right: -50px
+    top: -24px
+    height: 51px
+    width: 74px
+    transform: rotateY(180deg)
+
+/*------------------expert----------------*/
+.expert
+  margin-top: 30px
+  text-align: center
+
+.expert-block-img
+  margin: 0 auto
+  width: 140px
+  height: 140px
+  border: 3px solid #72448d
+  border-radius: 50%
+  overflow: hidden
+
+  img
+    width: 100%
+    height: 100%
+  &:after
+    background-image: url(../img/bg-team-image.png)
+    content: ""
+    height: 53px
+    position: absolute
+    bottom: 39%
+    left: 24.5%
+    width: 179px
+    z-index: 100
+.expert-block
+  border: 1px solid #bebebe
+  -webkit-transition: all 0.3s
+  padding: 40px 50px
+  position: relative
+  margin-bottom: 10px
+  &:hover
+    background: #f3e9f7
+.expert-block-name
+  margin-top: 30px
+.name-text
+  color: #868686
+  font-size: 0.7rem
+  font-family: 'Pattaya', sans-serif
+.button-center
+  margin: 0 auto
+.icon-grey
+  opacity: 0.18
+  background-image: url(../img/ico-flower.png)
+  background-position: left top
+  background-repeat: no-repeat
+  content: ""
+  display: block
+  height: 20px
+  margin: 0 auto
+  position: relative
+  width: 20px
+  &:after
+    content: ""
+    background: #181818
+    display: inline-block
+    height: 1px
+    position: absolute
+    top: 8px
+    width: 86px
+    left: 28px
+  &:before
+    content: ""
+    background: #181818
+    display: inline-block
+    height: 1px
+    position: absolute
+    top: 8px
+    width: 86px
+    right: 28px
+.expert-block-mail
+  margin-top: 15px
+
+ul.submenu
+  background-color: #8c67a3
+  border-radius: 5px
+  display: inline-block
+  padding: 4px 10px
+  margin: 0
+  overflow: hidden
+  li
+    display: inline-block
+    a
+      i.fab
+
+        display: inline-block
+        border: 1px solid transparent
+        color: #ccc
+        height : 30px
+        width: 30px
+        border-radius: 50px
+        margin: 10px
+        text-align: center
+        line-height: 30px
+        position: relative
+        z-index: 2
+        &:after
+          content: ""
+          height: 0%
+          width: 0%
+          position: absolute
+          top: -500%
+          bottom: -500%
+          left: -500%
+          right: -500%
+          margin: auto
+          border: 0px solid transparent
+          border-radius: 200px
+          opacity: 0
+          z-index: -1
+          transition: all ease 0.5s
+
+
+      &:hover
+        i.fab::before
+          color: #fff
+
+        i.fa-facebook-square::after
+          height: 200%
+          width: 200%
+          background-color: rgb(59,89,152)
+          border-radius: 0px
+          opacity: 1
+
+        i.fa-twitter-square::after
+          height: 200%
+          width: 200%
+          background-color: rgb(29,202,255)
+          border-radius: 0px
+          opacity: 1
+
+        i.fa-google-plus-g::after
+          height: 200%
+          width: 200%
+          background-color: rgb(211,72,54)
+          border-radius: 0px
+          opacity: 1
+
+        i.fa-instagram::after
+          height: 200%
+          width: 200%
+          background-color: rgb(138,58,185)
+          border-radius: 0px
+          opacity: 1
 
 
